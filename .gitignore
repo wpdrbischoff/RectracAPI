@@ -1,0 +1,4 @@
+venv/
+wpdconfig.py
+__pycache__/
+*.swp
