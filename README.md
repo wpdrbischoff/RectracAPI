@@ -1,6 +1,6 @@
 # RectracAPI
 
-- wpdconfig.py contents:
+wpdconfig.py contents:
 
 ```
   USERNAME = 'usernamehere'
