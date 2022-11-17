@@ -37,13 +37,13 @@ class API():
             self.headers = {'Cookie': f'_rectracsessionid={response.json()["sessionID"]}'}
 
 
-    def query_endpoint(self, endpoint: str, params: dict) -> tuple:
+    def query_endpoint(self, endpoint: str, params: dict) -> dict:
         self.endpoint = endpoint
         self.params = params
 
         response = requests.get(f'{self.full_url}/{self.endpoint}', headers=self.headers, params=params)
 
-        return (response.json()['data']['nextpage'], response.json()['data'][endpoint])
+        return response.json()['data']
 
 
 if __name__ == "__main__":
