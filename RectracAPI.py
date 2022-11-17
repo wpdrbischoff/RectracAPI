@@ -5,7 +5,7 @@ from typing import Any
 
 import urlconfig
 
-class WPDAPI():
+class API():
     def __init__(self, live: bool = False) -> None:
         self.live = live
         _live_demo = f'/wbwsc/{urlconfig.DEMO}'
