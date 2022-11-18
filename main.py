@@ -1,5 +1,6 @@
 import RectracAPI 
 import wpdconfig
+import pprint
 
 api = RectracAPI.API()
 
@@ -37,7 +38,6 @@ params = {'tablename': 'SASearchIndex',
         'FilterBy': 'contains',
         'FilterValue': 'MO:AR*WB:Yes*MS:Active'}
 
-table = 'SASearchIndex'
-
 data = api.query_endpoint(endpoint=f'tables/{table}/data', params=params)
 print(len(data['SASearchIndex']))
+pprint.pprint(data['SASearchIndex'])
