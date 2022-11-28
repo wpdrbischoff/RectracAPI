@@ -43,7 +43,7 @@ class API():
 
         response = requests.get(f'{self.full_url}/{self.endpoint}', headers=self.headers, params=params)
 
-        return response.json()['data']
+        return response.json() #['data']
 
 
 if __name__ == "__main__":
