@@ -1,4 +1,4 @@
-import RectracAPI 
+import RectracAPI
 import wpdconfig
 import pprint
 
@@ -18,9 +18,9 @@ api.auth(username=wpdconfig.USERNAME,password=wpdconfig.PASSWORD)
 
 
 #testing table query  / / gets all active, display on web, sections
-params = {'tablename': 'SASearchIndex', 
-        'limit': 999, 
-        'filterField': 'WordIndex', 
+params = {'tablename': 'SASearchIndex',
+        'limit': 999,
+        'filterField': 'WordIndex',
         'FilterBy': 'contains',
         'FilterValue': 'MO:AR*WB:Yes*MS:Active'}
 
@@ -31,10 +31,10 @@ print(len(data['SASearchIndex']))
 #print(data['nextpage'])
 
 #testing offset table query
-params = {'tablename': 'SASearchIndex', 
+params = {'tablename': 'SASearchIndex',
         'limit': 999,
         'offset': 999,
-        'filterField': 'WordIndex', 
+        'filterField': 'WordIndex',
         'FilterBy': 'contains',
         'FilterValue': 'MO:AR*WB:Yes*MS:Active'}
 
